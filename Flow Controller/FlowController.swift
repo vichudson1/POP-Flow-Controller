@@ -43,6 +43,8 @@ extension FlowController {
 //		guard currentStep > 0 else { return 0.0 }
 		return Double(currentStep + 1) / Double(dataSource.numberOfSteps(for: self))
 	}
+	
+	var numberOfStepsInFlow: Int { return dataSource.numberOfSteps(for: self) }
 }
 
 // MARK: -
